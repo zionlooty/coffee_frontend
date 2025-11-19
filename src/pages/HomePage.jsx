@@ -95,7 +95,7 @@ const HomePage = () => {
                             alt={item.label}
                             className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28"
                         />
-                        <h1 className="mt-2 text-gray-700 sm:text-white font-medium">
+                        <h1 className="mt-2 text-gray-700 sm:text-black font-medium">
                             {item.label}
                         </h1>
                     </div>
@@ -103,7 +103,7 @@ const HomePage = () => {
             </section>
 
 
-            {/* Special Coffee */}
+            
             <section className="flex flex-col items-center py-10 px-4 max-w-7xl mx-auto">
                 <h1 className="text-2xl text-center font-bold mb-6 text-black">OUR SPECIAL COFFEE</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full">
@@ -113,7 +113,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Special Dessert */}
+           
             <section className="flex flex-col items-center py-10 px-4 max-w-7xl mx-auto">
                 <h1 className="text-2xl text-center font-bold mb-6 text-black">OUR SPECIAL DESSERT</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full">
@@ -123,7 +123,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Call to Action */}
+          
             <section className="flex flex-col items-center justify-center py-10 text-center bg-[#958267]">
                 <div className="w-full px-4 max-w-md">
                     <h1 className="text-5xl font-semibold mb-5">Check out our best <br /> coffee beans</h1>
@@ -133,39 +133,62 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Happy Customers */}
-            <section className="flex flex-col items-center py-10 bg-[#fff8f0]">
-                <h5 className="italic font-medium mb-2 text-center text-gray-700">Come and join us</h5>
-                <h1 className="text-2xl md:text-3xl font-bold text-center mb-6 text-black">OUR HAPPY CUSTOMERS</h1>
-                <div className="flex flex-wrap justify-center gap-6 w-full px-4 max-w-7xl mx-auto">
-                    {["Janet Adams", "John Doe", "Mary Smith"].map((name, idx) => (
-                        <div key={idx} className="max-w-md w-full bg-[#f6e7d0] p-5 rounded-xl shadow-md flex flex-col">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-                                    <img src="/assets/asian.jpeg" alt={name} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="flex flex-col">
-                                    <h1 className="text-lg font-semibold">{name}</h1>
-                                    <span className="text-gray-700 text-sm">Freelance</span>
-                                </div>
-                                <div className="flex ml-auto">
-                                    <IoIosStar className="text-yellow-500" />
-                                    <IoIosStar className="text-yellow-500" />
-                                    <IoIosStar className="text-yellow-500" />
-                                    <IoIosStar className="text-yellow-500" />
-                                    <IoIosStarOutline className="text-yellow-500" />
-                                </div>
-                            </div>
-                            <p className="text-gray-800 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
-                                soluta dolor accusantium dignissimos impedit eaque aliquid voluptatibus
-                                ad suscipit porro deleniti blanditiis aspernatur maxime nihil
-                                doloremque dolorum distinctio delectus!
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </section>
+           
+            <section className="flex flex-col items-center py-10 bg-[#fff8f0] px-4">
+  {/* Subtitle */}
+  <h5 className="italic font-medium mb-1 text-center text-gray-700">
+    Come and join us
+  </h5>
+
+  {/* Title */}
+  <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 text-black">
+    OUR HAPPY CUSTOMERS
+  </h1>
+
+  {/* Card container */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
+    {["Janet Adams", "John Doe", "Mary Smith"].map((name, idx) => (
+      <div
+        key={idx}
+        className="bg-[#f6e7d0] p-5 rounded-xl shadow-md flex flex-col"
+      >
+        {/* Top section */}
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+            <img
+              src="/assets/asian.jpeg"
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* User info */}
+          <div className="flex flex-col">
+            <h1 className="text-lg font-semibold">{name}</h1>
+            <span className="text-gray-700 text-sm">Freelance</span>
+          </div>
+
+          {/* Stars */}
+          <div className="flex ml-auto">
+            <IoIosStar className="text-yellow-500" />
+            <IoIosStar className="text-yellow-500" />
+            <IoIosStar className="text-yellow-500" />
+            <IoIosStar className="text-yellow-500" />
+            <IoIosStarOutline className="text-yellow-500" />
+          </div>
+        </div>
+
+        {/* Review text */}
+        <p className="text-gray-800 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          soluta dolor accusantium dignissimos impedit eaque aliquid
+          voluptatibus ad suscipit porro deleniti aspernatur!
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
             {/* Newsletter */}
             <section className="flex flex-col items-center justify-center py-10 text-center bg-[#958267]">
