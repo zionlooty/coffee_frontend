@@ -190,31 +190,13 @@ const HomePage = () => {
 </section>
 
 
-            {/* Newsletter */}
-            <section className="flex flex-col items-center justify-center py-10 text-center bg-[#958267]">
-                <div className="w-full px-4 max-w-md">
-                    <h1 className="text-3xl font-semibold mb-2 text-black">Join in and get 15% off!</h1>
-                    <p className="text-gray-200 text-sm mb-6">Subscribe to our newsletter and get a 15% discount code</p>
-                    <div className="flex gap-2 justify-center">
-                        <div className="relative flex-1">
-                            <input
-                                type="email"
-                                className="w-full bg-white rounded-2xl border-none outline-none py-2 pl-10 pr-3"
-                                placeholder="Enter your email"
-                            />
-                            <MdEmail className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" size={20} />
-                        </div>
-                        <button className="bg-amber-900 text-white font-semibold py-2 px-5 rounded-2xl hover:bg-amber-800 transition-colors">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-            </section>
+          
+            
 
-            {/* Footer */}
+            
             <footer className="bg-[#6F4E37] text-white py-12">
                 <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Brand */}
+                
                     <div className="flex flex-col space-y-3">
                         <h1 className="text-2xl font-bold">CoffeeHouse</h1>
                         <p className="text-gray-200 text-sm">Serving the richest coffee in the city. Join our community of coffee lovers!</p>
